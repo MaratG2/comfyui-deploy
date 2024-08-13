@@ -221,7 +221,7 @@ function formatCode(
     );
   }
   return codeTemplate
-    .replace("<URL>", `${domain ?? "https://krem-comfy.serveo.net"}/api/run`) // "http://localhost:3000"
+    .replace("<URL>", `${domain ?? process.env.REDIRECT_URL}/api/run`) // "http://localhost:3000"
     .replace("<ID>", deployment.id)
-    .replace("<URLONLY>", domain ?? "https://krem-comfy.serveo.net"); // "http://localhost:3000"
+    .replace("<URLONLY>", domain ?? process.env.REDIRECT_URL); // "http://localhost:3000"
 }

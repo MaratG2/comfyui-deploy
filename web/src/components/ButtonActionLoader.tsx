@@ -73,11 +73,9 @@ export function ButtonActionMenu(props: {
             key={action.title}
             onClick={async () => {
               if (!user.isSignedIn) {
-                //clerk.openSignIn({
-                //  redirectUrl: "https://krem-comfy.serveo.net",
-                //  afterSignInUrl: "https://krem-comfy.serveo.net",
-                //  afterSignUpUrl: "https://krem-comfy.serveo.net",
-                //});
+                clerk.openSignIn({
+                  redirectUrl: process.env.REDIRECT_URL,
+                });
                 return;
               }
 

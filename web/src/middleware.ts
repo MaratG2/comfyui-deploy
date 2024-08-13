@@ -24,7 +24,7 @@ export default authMiddleware({
       // pathname.startsWith("/edit")
     ) {
       const url = new URL(req.url);
-      return redirectToSignIn({ returnBackUrl: url.origin });
+      return redirectToSignIn({ returnBackUrl: process.env.REDIRECT_URL }); // url.origin
     }
   },
 });

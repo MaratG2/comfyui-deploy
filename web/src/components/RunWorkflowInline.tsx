@@ -41,11 +41,9 @@ export function RunWorkflowInline({
 
   const runWorkflow = async () => {
     if (!user.isSignedIn) {
-      //clerk.openSignIn({
-      //  redirectUrl: "https://krem-comfy.serveo.net",
-      //  afterSignInUrl: "https://krem-comfy.serveo.net",
-      //  afterSignUpUrl: "https://krem-comfy.serveo.net",
-      //});
+      clerk.openSignIn({
+        redirectUrl: process.env.REDIRECT_URL,
+      });
       return;
     }
     console.log(values);
