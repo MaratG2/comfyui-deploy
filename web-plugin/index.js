@@ -1113,7 +1113,7 @@ function getData(environment) {
             };
         else
             return {
-                endpoint: "http://localhost:3000",
+                endpoint: "krem-comfy.serveo.net", // endpoint: "http://localhost:3000",
                 apiKey: "",
             };
     }
