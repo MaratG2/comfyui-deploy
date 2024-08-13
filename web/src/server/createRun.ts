@@ -144,12 +144,12 @@ export const createRun = withServerPromise(
             cache: "no-store",
           });
           console.log(___result);
-          if (!___result.ok)
-            throw new Error(
-              `Error creating run, ${
-                ___result.statusText
-              } ${await ___result.text()}`,
-            );
+          //if (!___result.ok)
+          //  throw new Error(
+          //    `Error creating run, ${
+          //      ___result.statusText
+          //    } ${await ___result.text()}`,
+          //  );
           console.log(_data, ___result);
           break;
         case "runpod-serverless":
@@ -178,12 +178,12 @@ export const createRun = withServerPromise(
             cache: "no-store",
           });
           console.log(__result);
-          if (!__result.ok)
-            throw new Error(
-              `Error creating run, ${
-                __result.statusText
-              } ${await __result.text()}`,
-            );
+          //if (!__result.ok)
+          //  throw new Error(
+          //    `Error creating run, ${
+          //      __result.statusText
+          //    } ${await __result.text()}`,
+          //  );
           console.log(data, __result);
           break;
         case "classic":
@@ -200,16 +200,16 @@ export const createRun = withServerPromise(
           });
           // console.log(_result);
 
-          if (!_result.ok) {
-            let message = `Error creating run, ${_result.statusText}`;
-            try {
-              const result = await ComfyAPI_Run.parseAsync(
-                await _result.json(),
-              );
-              message += ` ${result.node_errors}`;
-            } catch (error) {}
-            throw new Error(message);
-          }
+          //if (!_result.ok) {
+          //  let message = `Error creating run, ${_result.statusText}`;
+          //  try {
+          //    const result = await ComfyAPI_Run.parseAsync(
+          //      await _result.json(),
+          //    );
+          //    message += ` ${result.node_errors}`;
+          //  } catch (error) {}
+          //  throw new Error(message);
+          //}
           // prompt_id = result.prompt_id;
           break;
       }
