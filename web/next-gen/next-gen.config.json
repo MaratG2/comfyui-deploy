@@ -1,10 +1,10 @@
 {
-    "name": "Comfy Deploy",
-    "og:title": "Comfy Deploy | Stable Diffusion from your terminal to the world",
+    "name": "Krem Comfy",
+    "og:title": "Krem Comfy | Stable Diffusion in Web",
     "og:description": "",
-    "author": "BennyKok",
-    "tagline": "Stable Diffusion from your terminal to the world",
-    "description": "From your comfyui workflow to production ready API, flexibility at the speed of thought",
+    "author": "KREM.DIGITAL",
+    "tagline": "Stable Diffusion in Web",
+    "description": "Use ComfyUI to generate data and expose it to API, with great flexibility and speed",
     "pricingPlan": [
         {
             "name": "Free",
@@ -12,7 +12,7 @@
             "prices": [
                 {
                     "price": 0,
-                    "currency": "usd",
+                    "currency": "rub",
                     "pricingType": "month",
                     "paymentLink": "",
                     "paymentLink_Prod": ""
